@@ -17,7 +17,6 @@ client = TelegramClient(
 
 
 async def main():
-    global client
     await client.connect()
     await client.send_code_request(phone=phone)
     try:
